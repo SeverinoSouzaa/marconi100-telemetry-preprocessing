@@ -1,0 +1,19 @@
+# Artigo e arquivos locais de validacao
+artigo/
+
+# Datasets e telemetria pesada (armazenamento local)
+*.tar
+*.parquet
+*.csv
+data/
+datasets/
+
+# Python e Jupyter
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.env
+venv/
+.venv/
+env/
