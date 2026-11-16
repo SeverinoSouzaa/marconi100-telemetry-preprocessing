@@ -1,0 +1,38 @@
+{
+  "total_registros": 86615,
+  "total_treino": 60630,
+  "total_validacao": 12992,
+  "total_teste": 12993,
+  "acuracia_balanceada_teste": 0.9909,
+  "distribuicao_classes": {
+    "Baixo": 64099,
+    "Moderado": 22516
+  },
+  "metricas_classificacao": {
+    "Baixo": {
+      "precision": 0.9967696780445784,
+      "recall": 0.9899475991872527,
+      "f1-score": 0.9933469256357979,
+      "support": 9351.0
+    },
+    "Moderado": {
+      "precision": 0.974635725849973,
+      "recall": 0.9917627677100495,
+      "f1-score": 0.9831246597713663,
+      "support": 3642.0
+    },
+    "accuracy": 0.9904563995997845,
+    "macro avg": {
+      "precision": 0.9857027019472757,
+      "recall": 0.9908551834486511,
+      "f1-score": 0.9882357927035821,
+      "support": 12993.0
+    },
+    "weighted avg": {
+      "precision": 0.99056542545528,
+      "recall": 0.9904563995997845,
+      "f1-score": 0.9904815756567122,
+      "support": 12993.0
+    }
+  }
+}
