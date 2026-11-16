@@ -3,13 +3,13 @@
 Pipeline de pré-processamento auditável, engenharia de atributos e análise exploratória sobre telemetria física real do supercomputador **Marconi100 (CINECA)**, baseado no dataset oficial **M100 ExaData** ([Zenodo Record 7588815](https://doi.org/10.5281/zenodo.7588815)) e no repositório oficial do [ECS-Lab GitLab](https://gitlab.com/ecs-lab/exadata).
 
 Este trabalho constitui a **validação empírica com telemetria observacional real** continuada a partir da formulação metodológica proposta em:
-> *Gregory Gabriel Ozaki Coelho, Ana Paula Guimarães Xavier, Tiago dos Santos Mendonça, Gabriel Batista dos Santos, Calil Lima Pereira, Wamberson Pacheco Araújo*.  
+
 > **"Classificação do Nível de Risco de Desperdício Ambiental em Racks de Datacenters Voltados a Cargas de IA"**.  
-> *Simpósio Amazônico de Computação e Inovação (SACI 2026)*.
+
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Integrar grandezas elétricas reais (potência em Watts), térmicas (temperatura de entrada *inlet*, temperatura de processadores e GPUs NVIDIA Volta V100), refrigeração mecânica e temporalidade contínua para classificar e prever o **nível de risco de desperdício ambiental** (`classe_risco_desperdicio`: *Baixo*, *Moderado*, *Alto*).
 
@@ -19,7 +19,7 @@ Consulte [DECISOES.md](DECISOES.md) para detalhes completos de fórmulas, justif
 
 ---
 
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```text
 marconi100-telemetry-preprocessing/
@@ -34,7 +34,7 @@ marconi100-telemetry-preprocessing/
 ├── notebooks/
 │   └── analise_e_visualizacao.ipynb # Notebook interativo (Colab / Jupyter) com gráficos
 │
-└── resultados/                     # PRODUTO FINAL (Pronto para consumo pelo Gregory)
+└── resultados/                     # PRODUTO FINAL (Pronto para consumo e testes)
     ├── base_processada.csv         # Base tabular limpa unificada (86.615 registros)
     ├── base_processada.parquet     # Versão colunar compacta de alta velocidade
     ├── treino.parquet              # Partição de Treino (70% temporal)
@@ -52,7 +52,7 @@ marconi100-telemetry-preprocessing/
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 ### 1. Clonar o Repositório e Preparar o Ambiente
 
@@ -87,7 +87,7 @@ O script irá:
 
 ---
 
-## ⚡ Como o Gregory Pode Usar os Dados Diretamente
+## Como Usar os Dados Diretamente
 
 Para carregar os dados pré-processados e rodar testes de modelos no Python em menos de 10 segundos:
 
@@ -117,7 +117,7 @@ print(f"Treino: {X_train.shape}, Teste: {X_test.shape}")
 
 ---
 
-## 🔬 Referências
+## Referências
 
 1. **Dataset Oficial:** Borghesi, A. et al. (2023). *M100 dataset 1: from 20-03 to 20-12*. Zenodo. DOI: [10.5281/zenodo.7588815](https://doi.org/10.5281/zenodo.7588815).
 2. **Artigo Descritor:** Borghesi, A. et al. (2023). *M100 ExaData: a data collection campaign on the CINECA's Marconi100 Tier-0 supercomputer*. *Scientific Data* (Nature), 10:292. DOI: [10.1038/s41597-023-02174-3](https://doi.org/10.1038/s41597-023-02174-3).
